@@ -20,6 +20,14 @@
   	add1();	
   </script>
 
+  <script type="text/javascript">
+  	function rec1(){
+  		var panduan=confirm("想进去吗?");
+  		if (panduan==true) {document.write("请进!");}
+  		else {document.write("哼!");}
+  	}
+  </script>>
+
 </head>
 <body>
   <h1>网站一级标题</h1>
@@ -65,8 +73,11 @@
         </br>
         <script type="text/javascript">
             var sum=5;
-            if (sum>=6) {document.write("6点过啦 该吃饭啦");}
+            if (sum>=6) {document.write("6点过啦 该吃饭啦");}   
             else	    {document.write("还没到6点 不用吃饭");}
         </script>
-</body>
+        </br>
+        </br>                                                              
+        <input name="button" type="button" onClick="rec1()" value="性别" /> 
+</body>             
 </html>
