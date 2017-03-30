@@ -26,6 +26,15 @@
   		if (panduan==true) {document.write("请进!");}
   		else {document.write("哼!");}
   	}
+  </script>
+
+  <script type="text/javascript">
+    function rec2(){
+  	var ceshi=prompt("你觉得你自己有多帅，请打分：");
+  	if (ceshi>=90) {document.write("大帅比");}
+  	else if (60<ceshi<90) {document.write("那你还是可以");}
+  	else {document.write("额 回炉再造?");}
+    }
   </script>>
 
 </head>
@@ -78,6 +87,7 @@
         </script>
         </br>
         </br>                                                              
-        <input name="button" type="button" onClick="rec1()" value="性别" /> 
+        <input name="button" type="button" onclick="rec1" value="点我试试看" /> 
+        <input type="button" name="button" onclick="rec2()" value="长相小测试" />
 </body>             
 </html>
