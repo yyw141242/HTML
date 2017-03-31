@@ -39,7 +39,8 @@
   </br>
   <script type="text/javascript">
   	function rec3(){
-  		window.open('https://github.com','_blank','width=600,height=400,top=100,left=0')
+  		window.open('https://github.com','_blank','width=600,height=400,top=100,left=0');
+   		// window.close();有点理解不了
   	}
   </script>
 
@@ -96,5 +97,12 @@
         <input type="button" name="button1" onclick="rec1()" value="点我试试看" /> 
         <input type="button" name="button2" onclick="rec2()" value="长相小测试" />
         <input type="button" name="button3" onclick="rec3()" value="点这个按钮打开github" />
+        <p id="con">javascript</p>
+        <script type="text/javascript">
+        	var mychar=document.getElementById("con");
+        	document.write(mychar.innerHTML+"<br>"); 
+        	mychar.innerHTML="hello world" ;
+        	document.write(mychar.innerHTML);
+        </script>
 </body>             
 </html>
